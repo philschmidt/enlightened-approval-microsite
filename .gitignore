@@ -1,0 +1,18 @@
+# OS generated files
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# SublimeText project files
+###
+*.sublime-workspace
+*.sublime-project
+sftp-config.json
+sftp-settings.json

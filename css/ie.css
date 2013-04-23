@@ -1,0 +1,59 @@
+body{
+	background-image: url(../img/bg_marble.png);
+}
+
+#map_canvas{
+	display:none !important;
+}
+
+#wrapper{height:600px;}
+
+#form_inner{margin-top:25px; }
+
+label{
+	clear: both;
+	display:block;
+	font-size: 0.8em;
+	margin:0 0 5px;
+}
+
+select#flevel{
+	position: static;
+	float: left;
+	width: 50px;height:auto;
+	font-size: 15px;color: #ddd;
+	background-color: rgb(11, 12, 13);
+	background-image: none;
+	border: 1px solid #59fbea;
+	padding:0;
+	margin-bottom:10px;
+}
+select#flevel.error {
+	border:1px solid #ebbc4a !important;
+	color: #ebbc4a !important;
+}
+
+input#fnick {
+	float: left;
+	width:280px;height: auto;
+	font-size: 15px;line-height:normal;color: #ddd;
+	background-color: rgb(11, 12, 13) !important;
+	border: 1px solid #59fbea !important;
+	padding:1px 5px;
+	margin:0 0 10px 10px !important;
+}
+
+#errorbox{
+	top:184px;
+	height: 150px;
+}
+
+
+@media only screen and (min-width: 1280px) and (min-height:800px) {
+	#logo{
+	position:absolute;top:0;right:60px;z-index: 20;
+	width:250px;height:370px;overflow:hidden;
+	background:url(../img/logo.png) top left no-repeat;
+	background-size: contain;
+	}
+}
