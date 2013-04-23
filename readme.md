@@ -21,7 +21,7 @@ Three easy steps!
 Open this spreadsheet: 
 <a href="http://goo.gl/Y1uYX">http://goo.gl/9JXp8</a>
 
-Make a copy of it and note the URL of the Spreadsheet for step 3.<br/>
+Make a copy of it and note the URL of the Spreadsheet for step 2.<br/>
 Also note the URL of the automatically created webform in your drive account.
 
 <b>Step 2</b><br />
