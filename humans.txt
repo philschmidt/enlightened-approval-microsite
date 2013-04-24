@@ -1,0 +1,10 @@
+/* TEAM */
+	Idea, Design, Code: Phil Schmidt
+	Contact: phil@philschmidt.net
+	From: Munich, Germany
+
+/* SITE */
+	Last update: 2013-04-01
+	Language: Deutsch / English
+	Doctype: HTML5
+	IDE: Sublime Text 2, Photoshop CS 6
