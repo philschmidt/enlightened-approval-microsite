@@ -20,7 +20,7 @@
       <td><b>Level</b></td><td><b>Nick</b></td><td><b>Name</b></td><td><b>Area</b></td><td><b>eMail</b></td><td><b>Profile</b></td><td><b>Group</b></td><td><b>Chat</b></td><td><b>G+</b></td><td><b>Code</b></td>
     </tr>
     <tr>
-      <td>'.$_POST['flevel'].'</td><td>'.$_POST['fnick'].'</td><td>'.$_POST['fname'].'</td><td>'.$_POST['farea'].'</td><td>'.$_POST['fmail'].'</td><td>'.$_POST['fprofile'].'</td><td>'.$_POST['fgroup'].'</td><td>'.$_POST['fchat'].'</td><td>'.$_POST['fcomm'].'</td><td>'.$_POST['fcode'].'</td>
+      <td>'.$_POST['flevel'].'</td><td>'.$_POST['fnick'].'</td><td>'.$_POST['fname'].'</td><td>'.$_POST['farea'].'</td><td>'.$_POST['fmail'].'</td><td>'.$_POST['fprofile'].'</td><td>'.$_POST['fgroup'].'</td><td>'.$_POST['fchat'].'</td><td>'.$_POST['fcommunity'].'</td><td>'.$_POST['fcode'].'</td>
     </tr>
   </table>
 
