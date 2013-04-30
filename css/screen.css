@@ -11,10 +11,12 @@
 #header, 
 #wrapper_out,
 #errorbox,#error,#errormail,#errorlevel,#errorbox .button,
+#errorbox_invite,#error_invite,#errormail_invite,#errorlevel_invite,#errorbox_invite .button,
 #approval,
 #imprint,
 #footer,
-#metainfo{
+#metainfo,
+#invite{
 	display: none;
 }
 
@@ -274,7 +276,7 @@ input#fname {
 	clear: both;
 }
 
-input[type="submit"], #approval .button {
+input[type="submit"], #approval .button, #invite .button {
 	cursor: pointer;
 	width: auto;
 	font-family: 'PT sans', sans-serif;

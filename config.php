@@ -35,10 +35,17 @@
 		'form' => 'https://docs.google.com/forms/d/XXXX/formResponse' // Google Docs Spreadsheet Webform
 	);
 
+	// User data storage for Invites
+	// please replace XXXX of both fields with your values
+	$gdoc_invites = array( 
+		'sheet' => 'https://docs.google.com/spreadsheet/ccc?key=XXXX', // Google Docs Spreadsheet
+		'form' => 'https://docs.google.com/forms/d/XXXX/formResponse' // Google Docs Spreadsheet Webform
+	);
+
 	// Optional config values
 	// empty fields will be hidden / not included.
 	$config_opt = array( 
-		'analyticsKey' => 'UA', // Google Analytics property: UA-123456-12
+		'analyticsKey' => '', // Google Analytics property: UA-123456-12
 	);
 
 

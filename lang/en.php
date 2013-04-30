@@ -16,6 +16,11 @@ $navi = array(
 		'name' => 'Approval',
 		'id' => 'approval'
 	),
+	//coming soon
+	//array(
+	//	'name' => 'Invite approval',
+	//	'id' => 'invite'
+	//),
 	array(
 		'name' => 'Disclaimer / Privacy',
 		'id' => 'imprint'
@@ -34,9 +39,9 @@ foreach($channels as $c){
 }
 $contents['info_channels'] .= '</h3>';
 
-$contents['info_content'] = '<p class="notice">If you are playing for the '.$local['region1_en'].' Enlightened and aren\'t verified so far,<br/>please complete the <a href="#approval">approval form</a></p>
-
-	<hr/>
+$contents['info_content'] = '<p class="notice">If you are playing for the '.$local['region1_en'].' Enlightened and aren\'t verified so far,<br/>please complete the <a href="#approval">approval form</a></p>' 
+		.  ////'<p class="notice">If you want to play for the '.$local['region1_en'].' Enlightened and aren\'t invited so far,<br/>please complete the <a href="#invite">invite approval form</a></p>
+	'<hr/>
 
 	<div class="panel c50">
 		<h3>Got questions?</h3>		

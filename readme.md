@@ -1,8 +1,13 @@
 Info board and approval for ingress enlightened communities
 =
 
-v1.0 &copy; 2013 by Phil Schmidt, <a href="http://philschmidt.net">philschmidt.net</a><br />
+v1.0.1 &copy; 2013 by Phil Schmidt, <a href="http://philschmidt.net">philschmidt.net</a><br />
 Email me with questions or any inquiries: <a href="mailto:phil@philschmidt.net">phil@philschmidt.net</a>
+
+Update
+-
+v1.0.1 by Sebastian Groemcke, <a href="http://www.smeagol.de/">smeagol.de</a><br />
+Only included a Invite approvel form in german.
   
 About
 -
@@ -18,11 +23,12 @@ Installation
 Three easy steps!
 
 <b>Step 1</b><br />
-Open this spreadsheet: 
+Open this spreadsheets:
 <a href="http://goo.gl/Y1uYX">http://goo.gl/9JXp8</a>
+<a href="http://goo.gl/cWs51">http://goo.gl/cWs51</a>
 
-Make a copy of it and note the URL of the Spreadsheet for step 2.<br/>
-Also note the URL of the automatically created webform in your drive account.
+Make a copy of both and note the URLs of the Spreadsheet for step 2.<br/>
+Also note the URL of the automatically created webforms in your drive account.
 
 <b>Step 2</b><br />
 Edit config.php, and add all infos as noted in the comments (especially contact details and basic config values) and upload it together with the other files in any web folder on your webserver.

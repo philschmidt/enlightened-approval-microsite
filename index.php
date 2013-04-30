@@ -19,6 +19,11 @@ if(isset($_GET['post']) && isset($_POST)) {
 	require_once('./inc/gdoc.php');
 	require_once('./inc/mail.php');
 }
+if(isset($_GET['postinvite']) && isset($_POST)) {
+	require_once('./inc/gdoc_invite.php');
+	require_once('./inc/mail_invite.php');
+}
+
 
 require_once('./inc/header.php');
 ?>
@@ -63,7 +68,11 @@ foreach($navi as $n){
 					<div id="approval">
 <?php print $contents['form']; ?>
 					</div>
-
+<?php if($_COOKIE['lang']!=='en') : ?>
+					<div id="invite">
+<?php print $contents['form2']; ?>
+					</div>
+<?php endif; ?>
 					<div id="imprint">
 <?php print $contents['imprint']; ?>
 					</div>

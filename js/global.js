@@ -1,6 +1,7 @@
 ﻿var ingress = {
 	lang : $('body').attr('language'),
 	pflichtfelder : ['flevel','fnick','fname','farea','fmail'],
+	pflichtfelder2:['fname_invite','fmail_invite','ftime_invite'],
 	nav : ['info','approval','imprint'],
 	init : function() {
 		//language
@@ -91,6 +92,55 @@
 				$('#errorbox').fadeIn(500);
 			}
 		});
+		$("#invite").on(
+			"click", "button.submit",
+			function(e){
+				e.preventDefault();
+				var errorMail = false;
+				var result = {};
+				var errors = 0;
+				if($("#fmail_invite").val().match(/[a-z]|[A-Z]|@/)) {
+					if(!ingress.validateEmail($("#fmail_invite").val())) {
+						errorMail = true;
+					}
+				}
+				$("#invite input").each(function(){
+					if($.inArray( $(this).attr("id"),ingress.pflichtfelder2) > -1 && $(this).val() == ""){
+						errors++;
+						$(this).attr("class","error");
+					} else {
+						$(this).attr("class","");
+					}
+					result[$(this).attr("name")]=$(this).val();
+				});
+
+				if(!errorMail && errors == 0){
+					$.post("?postinvite",result,function(e){
+						$("#form_intro_invite").hide();
+						$("#form_inner_invite").hide();
+						$("#logo_invite").hide();
+						$("#invite").attr("class","success");
+						$("#invite input").each(function(){
+							$(this).val("");
+						});
+						$("#errorbox_invite").hide();
+						$("#invite div.success").fadeIn();
+					})
+				} else {
+					if(errors>0){
+						$("#error_invite").show()
+					}else{
+						$("#error_invite").hide()
+					}
+					if(errorMail == true){
+						$("#errormail_invite").show();
+						$("#fmail_invite").attr("class","error");
+					}else{
+						$("#errormail_invite").hide();
+					}
+					$("#errorbox_invite").fadeIn(500);
+				}
+			});
 	},
 	validateEmail : function(email) {
 		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;

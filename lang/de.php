@@ -16,9 +16,13 @@ $navi = array(
 		'id' => 'approval'
 	),
 	array(
+		'name' => 'Invite Anfrage',
+		'id' => 'invite'
+	),
+	array(
 		'name' => 'Impressum  / Datenschutz',
 		'id' => 'imprint'
-	)
+	),
 );
 
 $contents['info_header'] = '<h2>Enlightened '.$local['region1_de'].'</h2>
@@ -34,7 +38,7 @@ foreach($channels as $c){
 $contents['info_channels'] .= '</h3>';
 
 $contents['info_content'] = '<p class="notice">Wenn Du für die '.$local['region2_de'].' Enlightened spielst und bis jetzt noch nicht angemeldet bist,<br/>füll bitte das <a href="#approval">Anmeldeformular</a> aus.</p>
-
+	<p class="notice">Wenn Du für die '.$local['region2_de'].' Enlightened spielen möchtest aber noch keinen Invite hast,<br/>kannst du das <a href="#invite">Invite Anfrageformular</a> ausfüllen.</p>
 	<hr/>
 
 	<div class="panel c50">
@@ -94,6 +98,7 @@ foreach($channels as $c){
 	$contents['form'] .= '		<span class="checkbox"><input type="checkbox" id="f'.$c['form_id'].'" name="f'.$c['form_id'].'" checked="checked" /><label id="l'.$c['form_id'].'" for="f'.$c['form_id'].'">'.$c['name'].'</label></span>';
 }
 
+
 $contents['form'] .= '<button class="button submit positive">Senden</button>
 	</div>
 
@@ -102,6 +107,50 @@ $contents['form'] .= '<button class="button submit positive">Senden</button>
 		<p>Wir haben deine Daten erhalten. Bitte kopiere nun den folgenden Code ins COMM-Fenster unserer Fraktion (entweder in der <a href="http://www.ingress.com/intel?z=12&ll='.$config['mapsCoords'].'" target="_blank">Intel Map</a> oder der Ingress App).</p>
 		<p id="ver_code"></p>
 		<img id="comm" src="./img/comm.png" />
+		<p>Alle Infos zum weiteren Vorgehen haben wir Dir per Mail geschickt<br/> (prüfe ggf auch den SPAM-Ordner).</p>
+		<p class="signature">Cheers, Enlightened '.$local['region1_en'].' Mods</p>
+	</div>';
+
+$contents['form2'] = '<div id="form_intro_invite">
+		<h2>Enlightened '.$local['region1_de'].' Invite anfrage</h2>
+		<p class="info">Um einen Invite von uns anzufragen, teile uns bitte dein Google+ Profil, Namen, Viertel und deine E-Mail-Adresse mit.
+		Zusätzlich schlage uns noch einen Zeitpunkt vor an dem wir dich in '.$local['region1_de'].' treffen können:</p>
+	</div>
+
+	<div id="form_inner_invite">
+		<label id="lname_invite" for="fname_invite">Name</label>
+		<input type="text" id="fname_invite" name="fname_invite" maxlength="128" placeholder="Name" />
+		
+		<label id="larea_invite" for="farea_invite">Haupt-Viertel/Ort</label>
+		<input type="text" id="farea_invite" name="farea_invite" maxlength="256" placeholder="Haupt-Viertel/Ort" />
+		
+		<label id="lmail_invite" for="fmail_invite">gMail (für Feedback)</label>
+		<input type="text" id="fmail_invite" placeholder="gMail (für Feedback und Accounts)" name="fmail_invite" maxlength="128"/>
+		
+		<label id="lprofile_invite" for="fprofile_invite">G+ Profil URL (für Community-Account)</label>
+		<input type="text" id="fprofile_invite" placeholder="G+ Profil URL (für Community-Account)" name="fprofile_invite" maxlength="128"/>
+		
+		<label id="ltime_invite" for="ftime_invite">Wann möchtest du uns für den Invite treffen (Datum, Uhrzeit, Ort)</label>
+		<input type="text" id="ftime_invite" placeholder="Wann möchtest du uns für den Invite treffen (Datum, Uhrzeit, Ort)" name="ftime_invite" maxlength="128"/>
+
+		<label id="linfo_invite" for="finfo_invite">Warum sollen wir gerade dir einen Invite geben?</label>
+		<input type="text" id="finfo_invite" placeholder="Warum sollen wir gerade dir einen Invite geben?" name="finfo_invite" />
+
+		<div id="errorbox_invite">
+			<p id="error_invite">Bitte fülle alle markierten Felder aus.</p>
+			<p id="errormail_invite">Bitte prüfe die E-Mail-Adresse.</p>
+			<button class="button">OK</button>
+		</div>
+		Sobald wir deine Anfrage bekommen haben bekommst du von uns eine E-Mail mit Treffpunkt/Zeit an welchem du bitte mit installierter Ingress-App auf deinem Smartphone vorbeischaust.<br />
+		Zu diesem Zeitpunkt wird dir dann ein Mitspieler der Enlightened '.$local['region1_de'].' einen Invite Code übergeben und dich bei deinen ersten Ingress Schritten begleiten.
+		<br /><br />
+		';
+$contents['form2'] .= '<button class="button submit positive">Senden</button>
+	</div>
+
+	<div class="success" style="display: none;">
+		<h2>Danke.</h2>
+		<p>Wir haben deine Daten erhalten und werden uns bei dir Zeitnah melden.</p>
 		<p>Alle Infos zum weiteren Vorgehen haben wir Dir per Mail geschickt<br/> (prüfe ggf auch den SPAM-Ordner).</p>
 		<p class="signature">Cheers, Enlightened '.$local['region1_en'].' Mods</p>
 	</div>';
