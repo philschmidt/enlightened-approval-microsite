@@ -131,12 +131,12 @@
 			array(
 				'name_de' => 'Ingress Statistik',
 				'name_en' => 'Ingress demographics',
-				'url' => 'https://play.google.com/store/apps/details?id=com.ics.ingresscalculator'
+				'url' => 'http://simulacrum.cc/2013/01/23/the-demographics-of-ingress/'
 			),
 			array(
 				'name_de' => 'Ingress Global Control Diagramm',
 				'name_en' => 'Ingress global control chart',
-				'url' => 'https://play.google.com/store/apps/details?id=com.ics.ingresscalculator'
+				'url' => 'http://guywyant.info/ingress/control/'
 			)
 		)
 	);	
