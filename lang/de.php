@@ -13,15 +13,18 @@ $navi = array(
 	),
 	array(
 		'name' => 'Anmeldung',
-		'id' => 'approval'
+		'id' => 'approval',
+		'x' => ''
 	),
-	array(
-		'name' => 'Invite Anfrage',
-		'id' => 'invite'
-	),
+	//array(
+	//	'name' => 'Invite Anfrage',
+	//	'id' => 'invite',
+	//	'x' => ''
+	//),
 	array(
 		'name' => 'Impressum  / Datenschutz',
-		'id' => 'imprint'
+		'id' => 'imprint',
+		'x' => ''
 	),
 );
 
@@ -30,6 +33,7 @@ $contents['info_header'] = '<h2>Enlightened '.$local['region1_de'].'</h2>
 	<p>Folgende Kanäle sind in '.$local['region1_de'].' für verifizierte Enlightened-Spieler verfügbar:</p>';
 
 $contents['info_channels'] = '<h3>';
+$i=0;
 foreach($channels as $c){
 	$i++;
 	$contents['info_channels'] .= '<a target="blank" href="'.$c['url'].'">'.$c['name'].'</a>';
@@ -38,7 +42,6 @@ foreach($channels as $c){
 $contents['info_channels'] .= '</h3>';
 
 $contents['info_content'] = '<p class="notice">Wenn Du für die '.$local['region2_de'].' Enlightened spielst und bis jetzt noch nicht angemeldet bist,<br/>füll bitte das <a href="#approval">Anmeldeformular</a> aus.</p>
-	<p class="notice">Wenn Du für die '.$local['region2_de'].' Enlightened spielen möchtest aber noch keinen Invite hast,<br/>kannst du das <a href="#invite">Invite Anfrageformular</a> ausfüllen.</p>
 	<hr/>
 
 	<div class="panel c50">
