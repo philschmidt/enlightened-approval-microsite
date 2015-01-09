@@ -4,7 +4,7 @@
 	$to = $config['mail_mods'];
 	$subject = 'New Enlightened '.$local['region1_en'].' invite request';
 	$header  = 'MIME-Version: 1.0' . "\r\n";
-	$header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$header .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 	$header .= 'From: Enlightened Approval Request <'.$_POST['fname_invite'].'.'.$config['mail_noreply'].'>' . "\r\n";
 	$header .= 'Reply-To: '.$_POST['fname_invite'].' <'.$_POST['fmail_invite'].'>' . "\r\n";
 	$header .= 'X-Mailer: PHP/' . phpversion();
@@ -42,7 +42,7 @@
 	$subject2 = 'Ingress Enlightened '.$local['region1_en'].' invite requested';
 
 	$header2  = 'MIME-Version: 1.0' . "\r\n";
-	$header2 .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$header2 .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 	$header2 .= 'X-Priority: 3' . "\r\n";
 	$header2 .= 'X-Mailer: PHP/' . phpversion();
 	$header2 .= 'Organization: Ingress Enlightened '.$local['region1_en'].' Mods' . "\r\n";
