@@ -4,7 +4,7 @@
 	$to = $config['mail_mods'];
 	$subject = 'New Enlightened '.$local['region1_en'].' approval request';
 	$header  = 'MIME-Version: 1.0' . "\r\n";
-	$header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$header .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 	$header .= 'From: Enlightened Approval Request <'.$_POST['fnick'].'.'.$config['mail_noreply'].'>' . "\r\n";
 	$header .= 'Reply-To: '.$_POST['fname'].' ('.$_POST['fnick'].') <'.$_POST['fmail'].'>' . "\r\n";
 	$header .= 'X-Mailer: PHP/' . phpversion();
@@ -45,7 +45,7 @@ foreach($channels as $c){
 	$subject2 = 'Ingress Enlightened '.$local['region1_en'].' Approval';
 
 	$header2  = 'MIME-Version: 1.0' . "\r\n";
-	$header2 .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$header2 .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 	$header2 .= 'X-Priority: 3' . "\r\n";
 	$header2 .= 'X-Mailer: PHP/' . phpversion();
 	$header2 .= 'Organization: Ingress Enlightened '.$local['region1_en'].' Mods' . "\r\n";

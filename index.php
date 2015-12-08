@@ -8,7 +8,7 @@ if($contact['name'] == '' || $contact['mail'] == '' || $config['mail_mods'] == '
 }
 
 // load localized contents	
-if ($_COOKIE['lang']) {
+if (isset($_COOKIE['lang'])) {
 	require_once('./lang/'.$_COOKIE['lang'].'.php');
 }else{
 	require_once('./lang/'.$config['language'].'.php');
@@ -68,7 +68,7 @@ foreach($navi as $n){
 					<div id="approval">
 <?php print $contents['form']; ?>
 					</div>
-<?php if($_COOKIE['lang']!=='en') : ?>
+<?php if(isset($_COOKIE['lang']) && $_COOKIE['lang']!=='en') : ?>
 					<div id="invite">
 <?php print $contents['form2']; ?>
 					</div>

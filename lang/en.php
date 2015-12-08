@@ -14,16 +14,19 @@ $navi = array(
 	),
 	array(
 		'name' => 'Approval',
-		'id' => 'approval'
+		'id' => 'approval',
+		'x' => ''
 	),
 	//coming soon
 	//array(
 	//	'name' => 'Invite approval',
-	//	'id' => 'invite'
+	//	'id' => 'invite',
+	//	'x' => ''
 	//),
 	array(
 		'name' => 'Disclaimer / Privacy',
-		'id' => 'imprint'
+		'id' => 'imprint',
+		'x' => ''
 	)
 );
 
@@ -32,6 +35,7 @@ $contents['info_header'] = '<h2>Enlightened '.$local['region1_en'].'</h2>
 	<p>Verified enlightened players will be granted access to these channels:</p>';
 
 $contents['info_channels'] = '<h3>';
+$i=0;
 foreach($channels as $c){
 	$i++;
 	$contents['info_channels'] .= '<a target="blank" href="'.$c['url'].'">'.$c['name'].'</a>';
@@ -39,9 +43,8 @@ foreach($channels as $c){
 }
 $contents['info_channels'] .= '</h3>';
 
-$contents['info_content'] = '<p class="notice">If you are playing for the '.$local['region1_en'].' Enlightened and aren\'t verified so far,<br/>please complete the <a href="#approval">approval form</a></p>' 
-		.  ////'<p class="notice">If you want to play for the '.$local['region1_en'].' Enlightened and aren\'t invited so far,<br/>please complete the <a href="#invite">invite approval form</a></p>
-	'<hr/>
+$contents['info_content'] = '<p class="notice">If you are playing for the '.$local['region1_en'].' Enlightened and aren\'t verified so far,<br/>please complete the <a href="#approval">approval form</a></p>		
+	<hr/>
 
 	<div class="panel c50">
 		<h3>Got questions?</h3>		
@@ -72,7 +75,7 @@ $contents['form'] = '<div id="form_intro">
 
 	<div id="form_inner">
 		<label id="lnick" for="fnick">level / ingress nickname</label>
-		<select id="flevel" name="flevel"><option>&ndash;</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select>
+		<select id="flevel" name="flevel"><option>&ndash;</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option></select>
 		<input type="text" id="fnick" name="fnick" maxlength="64" placeholder="ingress nickname" />
 
 		<label id="lname" for="fname">real name</label>

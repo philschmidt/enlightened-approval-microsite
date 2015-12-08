@@ -13,15 +13,18 @@ $navi = array(
 	),
 	array(
 		'name' => 'Anmeldung',
-		'id' => 'approval'
+		'id' => 'approval',
+		'x' => ''
 	),
-	array(
-		'name' => 'Invite Anfrage',
-		'id' => 'invite'
-	),
+	//array(
+	//	'name' => 'Invite Anfrage',
+	//	'id' => 'invite',
+	//	'x' => ''
+	//),
 	array(
 		'name' => 'Impressum  / Datenschutz',
-		'id' => 'imprint'
+		'id' => 'imprint',
+		'x' => ''
 	),
 );
 
@@ -30,6 +33,7 @@ $contents['info_header'] = '<h2>Enlightened '.$local['region1_de'].'</h2>
 	<p>Folgende Kanäle sind in '.$local['region1_de'].' für verifizierte Enlightened-Spieler verfügbar:</p>';
 
 $contents['info_channels'] = '<h3>';
+$i=0;
 foreach($channels as $c){
 	$i++;
 	$contents['info_channels'] .= '<a target="blank" href="'.$c['url'].'">'.$c['name'].'</a>';
@@ -38,7 +42,6 @@ foreach($channels as $c){
 $contents['info_channels'] .= '</h3>';
 
 $contents['info_content'] = '<p class="notice">Wenn Du für die '.$local['region2_de'].' Enlightened spielst und bis jetzt noch nicht angemeldet bist,<br/>füll bitte das <a href="#approval">Anmeldeformular</a> aus.</p>
-	<p class="notice">Wenn Du für die '.$local['region2_de'].' Enlightened spielen möchtest aber noch keinen Invite hast,<br/>kannst du das <a href="#invite">Invite Anfrageformular</a> ausfüllen.</p>
 	<hr/>
 
 	<div class="panel c50">
@@ -70,7 +73,7 @@ $contents['form'] = '<div id="form_intro">
 
 	<div id="form_inner">
 		<label id="lnick" for="fnick">Level / Ingress Nickname</label>
-		<select id="flevel" name="flevel"><option>&ndash;</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select>
+		<select id="flevel" name="flevel"><option>&ndash;</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option></select>
 		<input type="text" id="fnick" name="fnick" maxlength="64" placeholder="Ingress Nickname" />
 
 		<label id="lname" for="fname">Echter Name</label>
